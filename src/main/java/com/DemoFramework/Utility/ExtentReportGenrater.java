@@ -8,7 +8,7 @@ public class ExtentReportGenrater {
 	public static ExtentReports extent;
 	
 	public static ExtentReports Reports() {
-		String ReportPath="C:\\Users\\Rushikesh Deshmukh\\eclipse-workspace\\DemoFramework\\TestReports\\index.html";
+		String ReportPath=System.getProperty("user.dir")+"\\TestReports\\index.html";
 		
 		ExtentSparkReporter reporter=new ExtentSparkReporter(ReportPath);
 		reporter.config().setDocumentTitle("Automation Test Report");
